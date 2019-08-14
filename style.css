@@ -24,14 +24,39 @@ body {
 }
 
 .logo {
-    position: relative;
     height: 120px;
+
 }
 
 img {
     width: 260px;
     height: auto;
 }
+
+.lead {
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        width: 130px;
+        height: auto;
+    }
+    
+    .logo {
+        height: 60px;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+  }
+
+@media only screen and (max-width: 670px) {
+    .lead {
+        font-size: 0.8rem;
+    }
+}  
 
 .btn {
     border-top-left-radius: 40px;
